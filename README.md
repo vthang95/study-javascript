@@ -7,7 +7,7 @@ Bắt nguồn từ khi mình đọc những topic tương tự thế này
 - https://daynhauhoc.com/t/tuyen-tat-ca-moi-nguoi-cung-tham-gia-lam-mot-open-source-ve-c-c/2058
 - https://daynhauhoc.com/t/y-tuong-nhom-phat-trien-ma-nguon-mo-php-day-nhau-hoc/2076
 
-Mình thấy mọi người có rất nhiều người ấp ủ những project open source , giúp đỡ cộng đồng lập trình viên nước ta. Nhưng  hầu hết các porject tiến triển khá chậm chạp hoặc có thể là đã dừng (Mình nhớ a Đạt dó start một project với JS để hướng dẫn các bạn học nhưng đã dừng).  Mình tổng kết một số lý do như sau khi mà những project đó dần đi vào quên lãng:
+Mình thấy mọi người có rất nhiều người ấp ủ những project open source , giúp đỡ cộng đồng lập trình viên nước ta. Nhưng  hầu hết các porject tiến triển khá chậm chạp hoặc có thể là đã dừng (Mình nhớ a Đạt có start một project với JS để hướng dẫn các bạn học nhưng đã dừng).  Mình tổng kết một số lý do như sau khi mà những project đó dần đi vào quên lãng:
 
 - Mọi người chỉ được cái nhiệt tình ban đầu, thấy  khó khăn là nản. Một câu kinh điển "Không phải tất cả mọi người,  bla bla ...", nhưng liệu có mấy người thấy khó khăn mà không nản? Bản thân mình khi gặp khó khăn cũng nản, cũng bỏ qua nhiều thứ lắm, để rồi tiếc nuối.
 - Bản thân người start project không nhận được lợi ích gì. Lợi ích là  động lực để làm việc, chỉ những comment, thanks là không đủ (nhiều khi 2 cái đơn giản  cũng không có). Liệu bạn có giúp đỡ người khác vô điều kiện không?
@@ -42,7 +42,7 @@ Chúng ta sẽ làm một trang giống như thế này, ([BanXeHoi](https://ban
 Project này mình sẽ học theo các thực hiện của SCRUM, theo mình hiểu thì chia task ra những phần nhỏ rồi ai có thể làm gì rồi tự pick lấy.
 
 - Mình sẽ chia task trên bản bản Google Sheet (Excel Online), đồng thời tạo task trên Github. Đáng lẽ chúng ta nên tạo trên một dịch vụ quản lý nhưng mà mình không có tiền để đăng ký ([Jira](https://www.atlassian.com/software/jira))
-- Mỗi bạn tham gia, cần phải học các để hoàn thành một task trong đó. Không quan trọng bạn làm bao lâu, mà quan trọng nhất là cách bạn code để có thể "hòa hợp" với code của người khác. Cái nào không hiểu thìì bạn phải tự tìm hiểu cách để giải quyết vấn đề.
+- Mỗi bạn tham gia, cần phải học các để hoàn thành một task trong đó. Không quan trọng bạn làm bao lâu, mà quan trọng nhất là cách bạn code để có thể "hòa hợp" với code của người khác. Cái nào không hiểu thì bạn phải tự tìm hiểu cách để giải quyết vấn đề.
 - Nếu được, mình sẽ tìm người để review code của project, giúp chúng ta nâng cao khả năng. Nhưng hi vọng mong manh lắm nên đừng ai hi vọng quá.
 
 ## Nhân sự
@@ -50,7 +50,7 @@ Lý tưởng nhất gồm 4 nhóm,
 
 - System: Khởi tạo Docker, cấu hình server, quản  lý  kỹ thuật, ...
 - Backend Dev: Sử dụng Loopback để tạo API, thiết kế hệ thống - database, ...
-- Frontend Dev: Tạo giao diện trang Frontend, dùng reactJS build trang Admin và CRM, có thể dùng SCSS chúng ta có thể.
+- Frontend Dev: Tạo giao diện trang Frontend, dùng reactJS build trang Admin và CRM, có thể dùng SCSS nếu chúng ta có thể.
 - Tester: Viết test case, tốt nhất test được bằng Mocha - xem thêm tại [MochaJS](https://mochajs.org/), quản lý SCRUM, tiến độ project, "Deadline", nhân sự,...
 
 Thật sự thì mình không nghĩ chúng ta có đủ 4 nhóm đâu. Có thể một người sẽ phải kiêm nhiệm ít nhất 2 nhóm, đặc biệt phần Tester là mình thấy khó có người sẽ join. Cho nên Dev viết thì Dev test luôn.
@@ -58,9 +58,9 @@ Thật sự thì mình không nghĩ chúng ta có đủ 4 nhóm đâu. Có thể
 ## Lợi ích của người tham gia
 - Bạn có một Project để show cho nhà tuyển dụng, nhất là nhà tuyển dụng cho công ty nước ngoài
 - Học được kha khá thứ với các công nghệ mình đã liệt kê, nổi bật nhất có lẽ là Docker, NodeJS
-- Học được cách vận hành một project thực tế, từ nhân sự làm việc, họp tác nhóm đến việc những khó khăn các bạn có thể đổi mặt như "code ướt" (Vi phạm nguyên tắc "Don't Repeat Yourself" - DRY), "code thối" (Không một ai có thể tránh được, không sớm thì muộn bạn cũng sẽ tạo ra những đoạn code chắp vá để giải quyết nhanh một vấn đề, do khách quan lẫn chủ quan), tìm cách ráp code của bạn với một đống  "code thối" - cách mà bạn gọi code của người đi trước - maà không làm crash hệ thống (thật sự mình thường xuyên bực bội vì việc phải đọc code của người khác rồi ráp code mình vào, nhưng sau này mình hiểu rằng người đi sau mình cũng chửi code mình ầm lên cả thôi).
+- Học được cách vận hành một project thực tế, từ nhân sự làm việc, họp tác nhóm đến việc những khó khăn các bạn có thể đổi mặt như "code ướt" (Vi phạm nguyên tắc "Don't Repeat Yourself" - DRY), "code thối" (Không một ai có thể tránh được, không sớm thì muộn bạn cũng sẽ tạo ra những đoạn code chắp vá để giải quyết nhanh một vấn đề, do khách quan lẫn chủ quan), tìm cách ráp code của bạn với một đống  "code thối" - cách mà bạn gọi code của người đi trước - mà không làm crash hệ thống (thật sự mình thường xuyên bực bội vì việc phải đọc code của người khác rồi ráp code mình vào, nhưng sau này mình hiểu rằng người đi sau mình cũng chửi code mình ầm lên cả thôi).
 
-Cái #3 mới là cái quan trọng nhất - theo mình nghĩ -  để giúp các bạn join vào một project. Nhất là với các bạn sinh viên, sự thật bạn học trong trường cần hàng tá bước chuẩn bị, họp hành để bắt tay vào ... xây dựng kế hoạch, nhưng trong thực tế sáng nhận yêu cần lúc 10h, chiều 5h demo thì có mà thánh mới làm đủ hết các bước. Chúng ta phải tinh giảm bớt các bước, vì thế mà bug dễ dàng sinh ra, rồi ta fix nhanh (k fix nhanh thì mất tiền), rồi lại ra bug. Chúng ta fix bug của người khác, chúng ta lại tạo ra bug của mình, rồi người đi sau fix bug của chúng ta, họ lại tạo ra bug của họ. Một vòng tròn lẩn quẩn.
+Cái #3 mới là cái quan trọng nhất - theo mình nghĩ -  để giúp các bạn join vào một project. Nhất là với các bạn sinh viên, sự thật bạn học trong trường cần hàng tá bước chuẩn bị, họp hành để bắt tay vào ... xây dựng kế hoạch, nhưng trong thực tế sáng nhận yêu cần lúc 10h, chiều 5h demo thì có mà thánh mới làm đủ hết các bước. Chúng ta phải tinh giảm bớt các bước, vì thế mà bug dễ dàng sinh ra, rồi ta fix nhanh (k fix nhanh thì mất tiền, đặc biệt với các startup thì thời gian là vàng bạc), rồi lại ra bug. Chúng ta fix bug của người khác, chúng ta lại tạo ra bug của mình, rồi người đi sau fix bug của chúng ta, họ lại tạo ra bug của họ. Một vòng tròn lẩn quẩn.
 
 ---
 
@@ -75,6 +75,7 @@ Mình tên Tuấn, 1993, hiện tại là PHP dev, đang chuyển dần sang hư
 - Database: không có gì nổi bật, từng sử dụng MySQL, PostgreSQL, MonggoDB, Redis, ElasticSearch
 - Quản lý: Hầu như rất ít, mình không có khiểu quản lý, chủ yếu giao task rồi mọi người tự làm.
 - Các kỹ năng khác: Git, SVN
+- Làm việc qua 2 công ty (mình đang làm công ty thứ 2), cả 2 đều là công ty product (tạo ra sản phẩm cho công ty chứ không phải outsource). Ở cả hai công ty cái mình học được nhiều nhất không phải là kỹ thuật, mà là cách quản lý vấn đề và giải quyết vấn đề, tầm quan trọng của kế hoạch (mặc dù tạo ra nhưng ít khi làm theo đúng), tai hại khi thiếu document và những quy chuẩn chung. Quy trình làm ra sản phẩm không hề hoàn hảo, mà là một chuỗi dài, tạo ra nhanh - bug - fix - bug -fix - ...
 
 ---
 Hi vọng các bạn sẽ thích project này.
