@@ -1,7 +1,5 @@
 # Study JavaScript - TuanNguyen
 
----
-
 ## Tại sao VN có rất ít project open source
 
 Bắt nguồn từ khi mình đọc những topic tương tự thế này
@@ -22,8 +20,6 @@ Vậy mình giải quyết 3 vấn đề ở trên ra sao?
 - #2 - Về bản thân người start project, là mình, lợi ích để mình làm cái này nhiều lắm. Những cái nổi bật như là mình sẽ có một project để mình show lên cho nhà tuyển dụng - một thứ quan trọng nếu muốn tìm việc ở các công ty nước ngoài, mình học thêm về JS, luyện kỹ năng quản lý nhóm và lên kế hoạch, tiếp cận SCRUM, ...
 - #3 - Thời gian thì một tuần mình có thế dành ra được 20h cho project này
 
----
-
 ## Chủ đề
 Mình chọn chủ đề là "Market Place Online". Chủ đề này  không quá phức tạp, đồng thời có đầy đủ những thứ hay ho mà ta có thể làm. Và quan trọng nhất: Mình quen thuộc với loại project này nhất.
 
@@ -42,8 +38,6 @@ Chúng ta sẽ làm một trang giống như thế này, ([BanXeHoi](https://ban
 - MySQL, đơn giản, dễ dùng. Project này chưa phải là nơi lý tưởng để mình bắt đầu sử dụng MongoDB mặc dù dùng MongoDB khá là sướng
 - Docker, để tạo nên sự thống nhất trong môi trường phát triển, xem thêm tại [Docker](https://www.docker.com/)
 
----
-
 ## Cách thực hiện
 Project này mình sẽ học theo các thực hiện của SCRUM, theo mình hiểu thì chia task ra những phần nhỏ rồi ai có thể làm gì rồi tự pick lấy.
 
@@ -61,16 +55,12 @@ Lý tưởng nhất gồm 4 nhóm,
 
 Thật sự thì mình không nghĩ chúng ta có đủ 4 nhóm đâu. Có thể một người sẽ phải kiêm nhiệm ít nhất 2 nhóm, đặc biệt phần Tester là mình thấy khó có người sẽ join. Cho nên Dev viết thì Dev test luôn.
 
----
-
 ## Lợi ích của người tham gia
 - Bạn có một Project để show cho nhà tuyển dụng, nhất là nhà tuyển dụng cho công ty nước ngoài
 - Học được kha khá thứ với các công nghệ mình đã liệt kê, nổi bật nhất có lẽ là Docker, NodeJS
 - Học được cách vận hành một project thực tế, từ nhân sự làm việc, họp tác nhóm đến việc những khó khăn các bạn có thể đổi mặt như "code ướt" (Vi phạm nguyên tắc "Don't Repeat Yourself" - DRY), "code thối" (Không một ai có thể tránh được, không sớm thì muộn bạn cũng sẽ tạo ra những đoạn code chắp vá để giải quyết nhanh một vấn đề, do khách quan lẫn chủ quan), tìm cách ráp code của bạn với một đống  "code thối" - cách mà bạn gọi code của người đi trước - maà không làm crash hệ thống (thật sự mình thường xuyên bực bội vì việc phải đọc code của người khác rồi ráp code mình vào, nhưng sau này mình hiểu rằng người đi sau mình cũng chửi code mình ầm lên cả thôi).
 
 Cái #3 mới là cái quan trọng nhất - theo mình nghĩ -  để giúp các bạn join vào một project. Nhất là với các bạn sinh viên, sự thật bạn học trong trường cần hàng tá bước chuẩn bị, họp hành để bắt tay vào ... xây dựng kế hoạch, nhưng trong thực tế sáng nhận yêu cần lúc 10h, chiều 5h demo thì có mà thánh mới làm đủ hết các bước. Chúng ta phải tinh giảm bớt các bước, vì thế mà bug dễ dàng sinh ra, rồi ta fix nhanh (k fix nhanh thì mất tiền), rồi lại ra bug. Chúng ta fix bug của người khác, chúng ta lại tạo ra bug của mình, rồi người đi sau fix bug của chúng ta, họ lại tạo ra bug của họ. Một vòng tròn lẩn quẩn.
-
----
 
 ### Vấn đề bản quyền
 Mình đặt LICENSE là MIT nên các bạn có thể sử dụng thoải mái, có thể dùng  source để kinh doanh, bán lại, tùy mọi người.
