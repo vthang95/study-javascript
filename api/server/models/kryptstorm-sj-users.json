@@ -10,9 +10,32 @@
       "type": "number",
       "required": true
     },
+    "userId": {
+      "type": "number",
+      "required": true
+    },
     "phone": {
       "type": "string",
       "required": true
+    },
+    "status": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "modified": {
+      "type": "date"
+    },
+    "verifiedType": {
+      "type": "number",
+      "required": false
+    },
+    "verifiedExpired": {
+      "type": "date"
     }
   },
   "validations": [],
