@@ -62,6 +62,8 @@ Thật sự thì mình không nghĩ chúng ta có đủ 4 nhóm đâu. Có thể
 
 Cái #3 mới là cái quan trọng nhất - theo mình nghĩ -  để giúp các bạn join vào một project. Nhất là với các bạn sinh viên, sự thật bạn học trong trường cần hàng tá bước chuẩn bị, họp hành để bắt tay vào ... xây dựng kế hoạch, nhưng trong thực tế sáng nhận yêu cần lúc 10h, chiều 5h demo thì có mà thánh mới làm đủ hết các bước. Chúng ta phải tinh giảm bớt các bước, vì thế mà bug dễ dàng sinh ra, rồi ta fix nhanh (k fix nhanh thì mất tiền), rồi lại ra bug. Chúng ta fix bug của người khác, chúng ta lại tạo ra bug của mình, rồi người đi sau fix bug của chúng ta, họ lại tạo ra bug của họ. Một vòng tròn lẩn quẩn.
 
+---
+
 ### Vấn đề bản quyền
 Mình đặt LICENSE là MIT nên các bạn có thể sử dụng thoải mái, có thể dùng  source để kinh doanh, bán lại, tùy mọi người.
 
