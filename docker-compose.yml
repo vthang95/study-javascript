@@ -23,9 +23,9 @@ services:
      environment:
        DB_HOST: db
        DB_PORT: 3306
-       DB_DATABASE: kryptstorm
        DB_USER: kryptstorm
        DB_PASSWORD: kryptstorm
+       DB_DATABASE: kryptstorm
        KS_PORT: 3000
 
    admin:

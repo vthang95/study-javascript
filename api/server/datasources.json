@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MySQL": {
+    "host": "DB_HOST",
+    "port": null,
+    "url": "mysql://user:pass@host/db",
+    "database": "DB_DATABASE",
+    "password": "DB_PASSWORD",
+    "name": "MySQL",
+    "user": "DB_USER",
+    "connector": "mysql"
+  }
+}
