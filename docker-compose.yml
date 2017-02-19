@@ -26,7 +26,19 @@ services:
        DB_DATABASE: kryptstorm
        DB_USER: kryptstorm
        DB_PASSWORD: kryptstorm
-       KT_PORT: 3000
+       KS_PORT: 3000
+
+   admin:
+     depends_on:
+       - api
+     image: kryptstorm/client-dev:latest
+     volumes:
+       - ./admin:/code
+     ports:
+       - "3001:3000"
+     command: "npm start"
+     environment:
+       KS_API: api
 
    phpmyadmin:
      depends_on:
