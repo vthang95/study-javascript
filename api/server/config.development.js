@@ -14,7 +14,7 @@ if (typeof p.version === 'string') {
 module.exports = {
   "restApiRoot": '/api' + (version > 0 ? '/v' + version : ''),
   "host": "0.0.0.0",
-  "port": process.env.KT_PORT,
+  "port": process.env.KS_PORT,
   "remoting": {
     "context": false,
     "rest": {

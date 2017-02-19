@@ -48,5 +48,9 @@ module.exports = {
   "Application": {
     "dataSource": "MySQL",
     "public": false
+  },
+  "KryptstormSjUsers": {
+    "dataSource": "MySQL",
+    "public": true
   }
 };

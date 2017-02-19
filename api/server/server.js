@@ -1,7 +1,7 @@
 'use strict';
 
 process.env.NODE_ENV = 'development';
-process.env.KT_PORT = process.env.KT_PORT || 3000;
+process.env.KS_PORT = process.env.KS_PORT || 3000;
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');

@@ -8,7 +8,7 @@
 
 const server = require('./../server');
 const ds = server.dataSources.MySQL;
-const lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'Scope', 'Application', 'KryptstormSjUsers'];
+const lbTables = ['KryptstormSjUsers'];
 
 ds.automigrate(lbTables, function (err) {
   if (err) {
