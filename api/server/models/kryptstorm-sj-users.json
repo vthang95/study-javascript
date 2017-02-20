@@ -41,7 +41,7 @@
       "default": 0,
       "description": [
         "0 - New User",
-        "1 - Active User - After validation, Tt'll be change to",
+        "1 - Active User - After validation, It'll be change to",
         "2 - Lock - User can not login but, all source of this user still available",
         "3 - Delete - User can not login and all source are hide"
       ],
@@ -75,7 +75,7 @@
   "acls": [],
   "methods": {},
   "http": {
-    "path": "/study-javascript/users"
+    "path": "/users"
   },
   "scope": {
     "order": "id DESC",
