@@ -14,6 +14,6 @@ ds.automigrate(lbTables, function (err) {
   if (err) {
     throw err;
   }
-  console.log('Loopback tables [' + lbTables.join(', ') + '] created in ', ds.adapter.name);
+  console.log('Kryptstorm tables [' + lbTables.join(', ') + '] created in ', ds.adapter.name);
   ds.disconnect();
 });

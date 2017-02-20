@@ -1,45 +1,84 @@
 {
   "name": "KryptstormSjUsers",
+  "description": "Kryptstorm Users for Study Javascript",
+  "strict": true,
   "base": "User",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "MySQL": {
+      "table": "KryptstormSjUsers"
+    }
   },
   "properties": {
     "id": {
       "type": "number",
       "required": true
     },
-    "userId": {
-      "type": "number",
-      "required": true
+    "firstName": {
+      "type": "string",
+      "required": false,
+      "default": null,
+      "length": 100
+    },
+    "lastName": {
+      "type": "string",
+      "required": false,
+      "default": null,
+      "length": 100
     },
     "phone": {
       "type": "string",
-      "required": true
+      "required": false,
+      "length": 15,
+      "index": {
+        "unique": true
+      }
     },
     "status": {
       "type": "number",
       "required": true,
-      "default": 0
+      "default": 0,
+      "description": [
+        "0 - New User",
+        "1 - Active User - After validation, Tt'll be change to",
+        "2 - Lock - User can not login but, all source of this user still available",
+        "3 - Delete - User can not login and all source are hide"
+      ],
+      "index": true
+    },
+    "verificationType": {
+      "type": "number",
+      "required": false,
+      "default": null,
+      "description": [
+        "1 - Sync with Loopback built-in properties, so It's default value - represent for successful validation",
+        "2 - Validate for reset password required"
+      ]
+    },
+    "verificationExpired": {
+      "type": "date",
+      "required": false,
+      "default": "now"
     },
     "created": {
       "type": "date",
-      "required": true
+      "required": true,
+      "default": null
     },
     "modified": {
-      "type": "date"
-    },
-    "verifiedType": {
-      "type": "number",
-      "required": false
-    },
-    "verifiedExpired": {
       "type": "date"
     }
   },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {},
+  "http": {
+    "path": "/study-javascript/users"
+  },
+  "scope": {
+    "order": "id DESC",
+    "limit": 15
+  }
 }

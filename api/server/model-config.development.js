@@ -23,7 +23,7 @@ module.exports = {
   },
   "User": {
     "dataSource": "MySQL",
-    "public": true
+    "public": false
   },
   "AccessToken": {
     "dataSource": "MySQL",
