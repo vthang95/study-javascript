@@ -5,14 +5,12 @@
   "base": "User",
   "idInjection": true,
   "options": {
-    "validateUpsert": true,
-    "MySQL": {
-      "table": "KryptstormSjUsers"
-    }
+    "validateUpsert": true
   },
   "properties": {
     "id": {
       "type": "number",
+      "dataType": "bigint",
       "required": true
     },
     "firstName": {
@@ -38,6 +36,8 @@
     "status": {
       "type": "number",
       "required": true,
+      "dataType": "tinyint",
+      "limit": 1,
       "default": 0,
       "description": [
         "0 - New User",
@@ -50,7 +50,9 @@
     "verificationType": {
       "type": "number",
       "required": false,
-      "default": null,
+      "default": 1,
+      "dataType": "tinyint",
+      "limit": 1,
       "description": [
         "1 - Sync with Loopback built-in properties, so It's default value - represent for successful validation",
         "2 - Validate for reset password required"
@@ -59,15 +61,16 @@
     "verificationExpired": {
       "type": "date",
       "required": false,
-      "default": "now"
+      "default": null
     },
     "created": {
       "type": "date",
       "required": true,
-      "default": null
+      "default": "now"
     },
     "modified": {
-      "type": "date"
+      "type": "date",
+      "default": null
     }
   },
   "validations": [],

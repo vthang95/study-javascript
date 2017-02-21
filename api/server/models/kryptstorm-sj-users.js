@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(KryptstormSjUsers) {
+module.exports = function (KryptstormSjUsers) {
 
 };
