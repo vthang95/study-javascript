@@ -66,7 +66,7 @@
     "created": {
       "type": "date",
       "required": true,
-      "default": "now"
+      "default": "$now"
     },
     "modified": {
       "type": "date",
