@@ -69,7 +69,7 @@ $ sudo docker run hello-world
 ```
 
 Kết quả nhận được như sau nghĩa là bạn đã cài thành công
-![Docker run Hello World](https://raw.githubusercontent.com/kryptstorm/study-javascript/master/doc/src/images/docker-run-hello-world.png)
+![Docker run Hello World](../src/images/docker-run-hello-world.png)
 
 ### Cài đặt docker-compose
 

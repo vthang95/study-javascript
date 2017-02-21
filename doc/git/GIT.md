@@ -1,0 +1,1 @@
+![Docker](../src/images/docker-run-hello-world.png)
