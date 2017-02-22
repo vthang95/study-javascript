@@ -1,6 +1,6 @@
 # Cài đặt Docker
 ## Ubuntu - Linux version
-### Yêu cầu
+### 1. Yêu cầu
 Các bạn cần cài bản 64-bit của các phiên bản Ubuntu sau
 - Yakkety 16.10
 - Xenial 16.04 (LTS)
@@ -14,8 +14,8 @@ $ sudo apt-get install -y --no-install-recommends \
       linux-image-extra-$(uname -r) \
       linux-image-extra-virtual
 ```
-### Cài đặt Docker
-#### Cài repository cho Ubuntu
+### 2. Cài đặt Docker
+#### a. Cài repository cho Ubuntu
 Cài các gói để ```apt ``` có thể cài repository bằng HTTPS
 
 ```sh
@@ -49,7 +49,7 @@ $ sudo add-apt-repository \
        ubuntu-$(lsb_release -cs) \
        main"
 ```
-#### Cài đặt Docker
+#### b. Cài đặt Docker
 Update hệt thống
 
 ```sh
@@ -69,9 +69,10 @@ $ sudo docker run hello-world
 ```
 
 Kết quả nhận được như sau nghĩa là bạn đã cài thành công
+
 ![Docker run Hello World](../src/images/docker-run-hello-world.png)
 
-### Cài đặt docker-compose
+### 3. Cài đặt docker-compose
 
 Sử dụng lệnh sau để cài compose
 
