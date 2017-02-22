@@ -1,17 +1,24 @@
 {
   "name": "KryptstormSjUsers",
   "description": "Kryptstorm Users for Study Javascript",
-  "strict": true,
   "base": "User",
+  "strict": true,
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/users"
+  },
+  "scope": {
+    "order": "id DESC",
+    "limit": 15
+  },
   "properties": {
     "id": {
       "type": "number",
-      "dataType": "bigint",
-      "required": true
+      "required": true,
+      "dataType": "bigint"
     },
     "firstName": {
       "type": "string",
@@ -28,35 +35,35 @@
     "phone": {
       "type": "string",
       "required": false,
-      "length": 15,
       "index": {
         "unique": true
-      }
+      },
+      "length": 15
     },
     "status": {
       "type": "number",
       "required": true,
-      "dataType": "tinyint",
-      "limit": 1,
-      "default": 0,
+      "index": true,
       "description": [
         "0 - New User",
         "1 - Active User - After validation, It'll be change to",
         "2 - Lock - User can not login but, all source of this user still available",
         "3 - Delete - User can not login and all source are hide"
       ],
-      "index": true
+      "dataType": "tinyint",
+      "limit": 1,
+      "default": 0
     },
     "verificationType": {
       "type": "number",
       "required": false,
-      "default": 1,
-      "dataType": "tinyint",
-      "limit": 1,
       "description": [
         "1 - Sync with Loopback built-in properties, so It's default value - represent for successful validation",
         "2 - Validate for reset password required"
-      ]
+      ],
+      "default": 1,
+      "dataType": "tinyint",
+      "limit": 1
     },
     "verificationExpired": {
       "type": "date",
@@ -75,13 +82,21 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
-  "methods": {},
-  "http": {
-    "path": "/users"
-  },
-  "scope": {
-    "order": "id DESC",
-    "limit": 15
-  }
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "deleteById"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+
+  ],
+  "methods": {}
 }
